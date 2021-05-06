@@ -1,11 +1,13 @@
 Prototypes
 ----------
 
-.. image:: https://img.shields.io/badge/python-3.6-blue.svg
-.. image:: https://img.shields.io/badge/python-3.7-blue.svg
-.. image:: https://img.shields.io/badge/python-3.8-blue.svg
-.. image:: https://img.shields.io/badge/python-3.9-blue.svg
-.. image:: https://img.shields.io/badge/python-3.10-blue.svg
+|py3.6| |py3.7| |py3.8| |py3.9| |py3.10|
+
+.. |py3.6| image:: https://img.shields.io/badge/python-3.6-blue.svg
+.. |py3.7| image:: https://img.shields.io/badge/python-3.7-blue.svg
+.. |py3.8| image:: https://img.shields.io/badge/python-3.8-blue.svg
+.. |py3.9| image:: https://img.shields.io/badge/python-3.9-blue.svg
+.. |py3.10| image:: https://img.shields.io/badge/python-3.10-blue.svg
 
 Summary
 =======
@@ -23,7 +25,9 @@ Installation
 Requirements
 ============
 
-- typing-extensions >= 3.10 when using Python < 3.10
+- `typing-extensions`_ >= 3.10 when using Python < 3.10
+
+.. _`typing-extensions`: https://pypi.org/project/typing-extensions
 
 Basic usage
 ===========
@@ -42,7 +46,7 @@ the ``prototype`` decorator and pass the prototype function as a parameter.
     def custom_add(x: int, y: int) -> int:
         return x + y
 
-Static type checking is fully supported thanks to usage of ``typing.TypeVar``
+Static type checking is fully supported thanks to usage of both ``typing.TypeVar``
 (`PEP 484`_) and ``typing.ParamSpec`` (`PEP 612`_) under the hood.
 
 .. code-block:: python
@@ -152,7 +156,6 @@ Bugs/Requests
 Please use the `GitHub issue tracker`_ to submit bugs or request features.
 
 .. _`GitHub issue tracker`: https://github.com/kprzybyla/prototypes/issues
-
 
 License
 -------
