@@ -1,0 +1,14 @@
+include LICENSE
+include README.rst
+include setup.py
+include setup.cfg
+
+exclude .gitignore
+exclude tox.ini
+exclude pyproject.toml
+exclude MANIFEST.in
+exclude requirements*
+
+exclude tests/**/*
+
+recursive-exclude * *.pyc *.pyo

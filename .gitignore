@@ -1,0 +1,26 @@
+# Python
+*.pyc
+
+# PyCharm
+.idea/
+
+# setup.py
+.eggs/
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+__version__.py
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# tox
+.tox/
+
+# coverage
+.coverage
+coverage/
